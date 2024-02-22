@@ -20,6 +20,18 @@ const routes: Routes = [
         (m) => m.TablesRoutingModule
       ),
   },
+  {
+    path: 'lists',
+    loadChildren: () =>
+      import('./lists/lists-routing.module').then((m) => m.ListsRoutingModule),
+  },
+  {
+    path: 'popups',
+    loadChildren: () =>
+      import('./popups/popups-routing.module').then(
+        (m) => m.PopupsRoutingModule
+      ),
+  },
   { path: '', component: HomeComponent },
   { path: '**', component: NotFoundComponent },
 ];

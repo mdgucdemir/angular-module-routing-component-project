@@ -3,10 +3,13 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { PlaceholdersModule } from './placeholders/placeholders.module';
-import { TablesModule } from './tables/tables.module';
-import { NotFoundComponent } from './not-found/not-found.component';
 import { HomeComponent } from './home/home.component';
+import { NotFoundComponent } from './not-found/not-found.component';
+
+import { TablesModule } from './tables/tables.module';
+import { PopupsModule } from './popups/popups.module';
+import { PlaceholdersModule } from './placeholders/placeholders.module';
+import { ListsModule } from './lists/lists.module';
 
 @NgModule({
   declarations: [AppComponent, NotFoundComponent, HomeComponent],
